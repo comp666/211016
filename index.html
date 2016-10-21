@@ -323,7 +323,7 @@ $(document).ready(function() {
 
 
 
-<html>
+<!--<html>
 <head>
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
@@ -454,6 +454,43 @@ $(document).ready(function() {
 </div>
 </div>
 </body>
-</html>
+</html> -->
+
+
+
+
+
+<!--<html>
+<head>                                                      
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js">
+</script>
+<script type="text/javascript">   
+$(document).ready(function(){
+
+   $("#but1").click(function(){
+      var obj1=[30,20,10];
+      arr1=$.map(obj1,function(value){return value+4});
+      arr1.join(", ");
+      alert(arr1);
+   });
+   $("#but2").click(function(){
+      var obj2=[27,100,45,56,78,15];
+      arr2=$.map(obj2,function(value){if (value<50){return value;} else {return null;}});
+      arr2.join(", ");
+      alert(arr2);
+   }); 
+ 
+});                                       
+</script> 
+<body>
+<p>Объект1: [30,20,10].</p>
+<p>Функция: function(value){return value+4}.</p>
+<input id="but1" type="button" value="Обработать объект функцией и отобразить результат" />
+<p>Объект2: [27,100,45,56,78,15].</p>
+<p>Функция: function(value){if (value<50){return value;} else {return null}}.</p>
+<input id="but2" type="button" value="Обработать объект функцией и отобразить результат" />
+</body>
+</html> -->
+
 
 
